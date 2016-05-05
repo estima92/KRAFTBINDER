@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+table {
+    border-color: black;
+width: 33%;
+    float: left;
+}
+
+tr {
+text-align: center;
+color: white;
+}
+
+/*tr>th{*/
+/*background: #FFB93A;*/
+/*text-align: center;*/
+/*border: solid 2px black;*/
+/*}*/
+tr>th {
+color: red;
+text-decoration: none;
+text-align: center;
+}
+
+tr>th>a {
+color: red;
+text-decoration: none;
+transition: all 0.2s ease-in-out;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 2px solid black;
+}
+
+
+
+
+
+
+/*tr>th>a:hover {*/
+/*color: red;*/
+/*text-decoration: underline;*/
+/*transition: all 0.2s ease-in-out;*/
+/*}*/
+
+/*tr>td:nth-child(1) {*/
+/*background: black;*/
+/*border-bottom: solid 2px #FFB93A;*/
+/*border-left: solid 2px #FFB93A;*/
+/*}*/
+
+/*tr>td:nth-child(2) {*/
+/*!*background: #FFB93A;*!*/
+/*border-bottom: solid 2px black;*/
+/*border-right: solid 2px black;*/
+/*}*/
+
+/*tr.pricetable>td {*/
+/*border: none;*/
+/*margin: 15px;*/
+/*!*background: none;*!*/
+/*}*/
+/*.pricetable {*/
+/*padding: 5px;*/
+/*}*/
+
