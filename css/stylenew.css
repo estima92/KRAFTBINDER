@@ -25,7 +25,9 @@ img {
     transform-style: preserve-3d;
     image-rendering: -webkit-optimize-contrast;
 }
+.rowmargin {
 
+}
 p{
     color: white;}
 h1 {
