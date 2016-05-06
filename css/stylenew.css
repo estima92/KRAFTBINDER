@@ -25,19 +25,23 @@ img {
     transform-style: preserve-3d;
     image-rendering: -webkit-optimize-contrast;
 }
-.rowmargin {
-
+.modalrowmargin {
+    margin-top: 10px;
 }
 p{
-    color: white;}
+    color: white;
+}
+.modal-body p {
+    text-align: justify;
+}
 h1 {
     text-align:center ;
     color: black;
 }
 
 h2 {
-    text-align:center ;
-    color: red;
+    text-align:left;
+    color: #F49100;
     font-size: 36px;
 }
 h3 {
@@ -136,7 +140,7 @@ a:focus {
 }
 .yellowback {
 
-    background: #F49100 ;
+    /*background: #F49100 ;*/
     text-decoration: none;
     border-top: none;
 }
@@ -300,6 +304,8 @@ a:focus {
 ul{
     text-align: center;
     margin-left: 0;
+    padding-left: 20px;
+
 
 }
 li {
@@ -349,65 +355,85 @@ li {
 }
 
 .modal {
-
     max-height:90%;
 }
 .modal-dialog {
     width: 100%;
 }
-.close {
-    color: #000000;
+.closemodal {
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    color: #F49100;
     padding: 5px;
     opacity: 1;
+    border: none;
+}
+.closemodal:hover {
+    color: red;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
 }
 body.modal-open {
     overflow-y: hidden;
 }
 .modal-content {
-    border: solid 3px #F49100;
+    border: none;
     height: 80vh;
     width: 90%;
     margin: auto;
-    background: none;
+   background: #111;
 
 
 }
 .modal-header{
-    padding: 0;
+    height: 50px;
+    padding: 5px;
     border-bottom: none;
 }
+.modal-header h1 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #F49100;
+
+}
+.modal-header h1 span{
+    color: #F70000;
+}
 .modal-body {
-    max-height: calc(80vh - 61px);
+    max-height: calc(80vh - 50px);
     /*max-height: 60vh ;*/
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.modal-content:before
-{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-width: 150px;
-    min-height: 150px;
-    z-index: -1;
-    background-color: #222222;
-    opacity: 0.9;
-}
-.modal-content-nottransparent:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-width: 150px;
-    min-height: 150px;
-    z-index: -1;
-    background-color: #222222;
-    opacity: 1;
-}
+/*.modal-content:before*/
+/*{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*min-width: 150px;*/
+    /*min-height: 150px;*/
+    /*z-index: -1;*/
+    /*background-color: #222222;*/
+    /*opacity: 0.9;*/
+/*}*/
+/*.modal-content-nottransparent:before {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*min-width: 150px;*/
+    /*min-height: 150px;*/
+    /*z-index: -1;*/
+    /*background-color: #222222;*/
+    /*opacity: 1;*/
+/*}*/
 #bottombar
 {   position: absolute;
     bottom: 0;
@@ -637,3 +663,6 @@ button {
 /*::-webkit-scrollbar-thumb:window-inactive {*/
     /*background: rgba(255, 255, 255, 0.4);*/
 /*}*/
+
+
+
